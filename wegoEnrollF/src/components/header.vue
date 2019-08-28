@@ -143,7 +143,7 @@
 
     .wego-logo {
         display: block;
-        background-image: url("../assets/wego_logo.png");
+        background-image: url("http://wsmpage.cn/wego/wego.png");
         background-size: 100% 100%;
         height: 100%;
         width: 100%;
@@ -161,7 +161,7 @@
         align-items: center;
         width: 0;
         flex-grow: 1;
-        font-size: 18px;
+        font-size: 1rem;
         cursor: pointer;
     }
 
@@ -177,4 +177,38 @@
         justify-content: center;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 1300px) {
+        .cus-header {
+            padding: 0 24px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .cus-nav {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .cus-nav {
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .cus-nav {
+            width: 90%;
+            height: 50%;
+        }
+
+        .nav-box {
+            font-size: 14px;
+        }
+
+        .nav-all {
+            width: 95%;
+        }
+    }
+
 </style>

@@ -71,7 +71,7 @@
                 color black
             .content-block-content
                 text-indent: 2em;
-        .no-box{
+        .no-box
             display flex;
             flex-direction column
             width 80%;
@@ -81,5 +81,5 @@
             color white
             font-size 25px;
             background: rgb(190, 200, 200);
-        }
+
 </style>

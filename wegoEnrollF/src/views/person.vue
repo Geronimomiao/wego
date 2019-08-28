@@ -111,4 +111,11 @@
         box-sizing: border-box;
         padding: 0 30px;
     }
+
+    @media screen and (max-width: 800px) {
+        .main-body {
+            padding: 0;
+        }
+    }
+
 </style>

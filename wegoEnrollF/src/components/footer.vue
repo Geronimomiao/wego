@@ -12,15 +12,22 @@
 </script>
 
 <style scoped>
-.cus-footer{
-    display: flex;
-    height: 110px;
-    background-color: white;
-    padding: 0 200px;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    color: #999;
-    text-align: center;
-}
+    .cus-footer{
+        display: flex;
+        height: 110px;
+        background-color: white;
+        padding: 0 200px;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .cus-footer {
+            padding: 0;
+        }
+    }
+
 </style>

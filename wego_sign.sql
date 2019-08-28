@@ -1,19 +1,21 @@
 /*
-Navicat MySQL Data Transfer
+ Navicat Premium Data Transfer
 
-Source Server         : mos
-Source Server Version : 50721
-Source Host           : 39.106.3.41:3306
-Source Database       : wego_sign
+ Source Server         : local
+ Source Server Type    : MySQL
+ Source Server Version : 50724
+ Source Host           : localhost:3306
+ Source Schema         : wego_sign
 
-Target Server Type    : MYSQL
-Target Server Version : 50721
-File Encoding         : 65001
+ Target Server Type    : MySQL
+ Target Server Version : 50724
+ File Encoding         : 65001
 
-Date: 2019-07-10 11:29:14
+ Date: 27/08/2019 16:18:27
 */
 
-SET FOREIGN_KEY_CHECKS=0;
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
 -- Table structure for info
@@ -32,7 +34,14 @@ CREATE TABLE `info` (
   `summary` varchar(500) DEFAULT NULL,
   `state` tinyint(255) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of info
+-- ----------------------------
+BEGIN;
+INSERT INTO `info` VALUES (10, '王思邈', '男', '软件', '1701', '1711650121', '13001380337', '12', '1', '111', 0);
+COMMIT;
 
 -- ----------------------------
 -- Table structure for manage
@@ -44,3 +53,12 @@ CREATE TABLE `manage` (
   `password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Records of manage
+-- ----------------------------
+BEGIN;
+INSERT INTO `manage` VALUES (1, 'wego', 'tjpu');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
